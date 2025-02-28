@@ -9,6 +9,8 @@ body {
   width: 100%;
   height: 100vh;
 
+  font-family: 'Fraunces',sans-serif;
+
 }
 
 /* ===================================================== */
@@ -20,24 +22,85 @@ body {
   overflow: auto;
 }
 
-#page-wrapper > header {
-  background-color: chocolate;
-  width: 100%;
-  height: 100px;
-
-  position: sticky;
-  top:0px;
-
-  z-index: 3;
-  
-}
-
 /* ===================================================== */
 #front-page-wrapper {
-  background-color: blue;
+  background-color: salmon;
   width: 100%;
   height: 560px;
 
+}
+
+#front-page-wrapper > header {
+  background-color: hsl(200, 100%, 62%);
+  width: 100%;
+  height: 100px;
+
+  padding: 0px 25px;
+
+  position: absolute;
+  z-index: 3;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#header-logo {
+  width: 130px;
+  height: 25px;
+}
+
+#header-logo > img {
+  width: 125px;
+  height: 25px;
+}
+
+#nav-bar {
+  width: 25px;
+  height: 25px;
+}
+
+#mobile-hamburger {
+  cursor: pointer;
+}
+
+#nav-bar > ul {
+  display: none;
+}
+
+#front-page-wrapper > h1 {
+  width: 100%;
+  height: 100px;
+
+  position: relative;
+  top:150px;
+  z-index: 2;
+
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 900;
+  letter-spacing: 6px;
+}
+
+#down-arrow {
+  width: 100%;
+  height: 100px;
+
+  position: relative;
+  top:210px;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#down-arrow > img {
+  /* background-color: orange; */
+  width: 40px;
+  height: 120px;
 }
 
 #front-page-img {
@@ -46,47 +109,19 @@ body {
   height: 100%;
 
   z-index: 1;
+  position: relative;
+  top: -200px;
 }
-
+/* mobile img */
 #front-page-img > img:first-child {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  /* display: none; */
 }
-
+/* desktop img */
 #front-page-img > img:last-child {
   display: none;
-}
-
-
-
-
-#front-page-wrapper > h1 {
-  background-color: darkred;
-  width: 100%;
-  height: 100px;
-
-  /* display: none; */
-  position: relative;
-  top:-400px;
-
-  z-index: 2;
-}
-
-#down-arrow {
-  background-color: yellowgreen;
-  width: 100%;
-  height: 100px;
-
-  position: relative;
-  top:-300px;
-  z-index: 2;
-}
-
-#down-arrow > img {
-  background-color: orange;
-  width: 50px;
-  height: 60px;
 }
 
 
