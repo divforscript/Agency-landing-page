@@ -134,7 +134,67 @@ main {
 
 /* ===================================================== */
 footer {
-  background-color: rebeccapurple;
+  background-color: hsl(168, 34%, 41%);
   width: 100%;
   height: 360px;
+  /* padding-top: 30px; */
+
+  display: flex;
+  flex-direction: column;
+}
+
+#footer-logo {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+
+  margin-top: 70px;
+}
+
+#footer-logo > svg {
+  transform: scale(1.4);
+}
+
+#footer-page-links {
+  height: 30px;
+  margin-top: 30px;
+}
+
+#footer-page-links > ul {
+  list-style: none;
+
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
+#footer-page-links > ul > li > a {
+  text-decoration: none;
+
+  color: hsl(167, 40%, 24%);
+  font-family: 'Barlow';
+  font-size: 18px;
+  
+}
+
+#footer-social-links {
+  height: 30px;
+  margin-top: 75px;
+}
+
+#footer-social-links > ul {
+  list-style: none;
+
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+
+.footer-social-icons {
+  transform: scale(1.2);
+}
+
+.footer-svg > path {
+  fill: hsl(167, 40%, 24%);
 }
