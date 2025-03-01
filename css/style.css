@@ -306,20 +306,23 @@ main {
 
 #testimonials-wrapper > h2 {
   height: 30px;
+  margin-top: 32px;
   color: hsl(210, 4%, 67%);
   font-size: 17px;
   font-weight: 900;
   letter-spacing: 4px;
+
 }
 
 #clients-wrapper {
-  background-color: burlywood;
   height: 1070px;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .client-testimonial {
-  background-color: salmon;
-  height: 300px;
+  margin-top: 64px;
 
   display: flex;
   flex-direction: column;
@@ -333,9 +336,8 @@ main {
 }
 
 .type4-paragraph {
-  background-color: rgb(255, 240, 220);
   width: 90%;
-  margin-top: 20px;
+  margin-top: 25px;
 
   color: hsl(213, 9%, 39%);
   font-family: 'Barlow';
@@ -344,16 +346,14 @@ main {
 }
 
 .type41-title {
-  background-color: rgb(255, 240, 220);
-  margin-top: 20px;
+  margin-top: 30px;
 
   color: hsl(212, 27%, 19%);
   font-weight: 900;
 }
 
 .type42-title {
-  background-color: rgb(255, 240, 220);
-  margin-top: 14px;
+  margin-top: 12px;
 
   color: hsl(210, 4%, 67%);
   font-family: 'Barlow';
