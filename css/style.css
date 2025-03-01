@@ -43,6 +43,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  display: none;
 }
 
 #header-logo {
@@ -129,7 +131,7 @@ body {
 main {
   background-color: darkgreen;
   width: 100%;
-  height: 4199px;
+  height: 4299px;
 }
 
 #egg-sec-wrapper {
@@ -295,6 +297,83 @@ main {
 
 
 
+#testimonials-wrapper {
+  background-color: rgb(255, 240, 220);
+  height: 1159px;
+  padding: 30px;
+  text-align: center;
+}
+
+#testimonials-wrapper > h2 {
+  height: 30px;
+  color: hsl(210, 4%, 67%);
+  font-size: 17px;
+  font-weight: 900;
+  letter-spacing: 4px;
+}
+
+#clients-wrapper {
+  background-color: burlywood;
+  height: 1070px;
+}
+
+.client-testimonial {
+  background-color: salmon;
+  height: 300px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.client-testimonial > img {
+  width: 75px;
+  height: calc(with);
+  border-radius: 50%;
+}
+
+.type4-paragraph {
+  background-color: rgb(255, 240, 220);
+  width: 90%;
+  margin-top: 20px;
+
+  color: hsl(213, 9%, 39%);
+  font-family: 'Barlow';
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.type41-title {
+  background-color: rgb(255, 240, 220);
+  margin-top: 20px;
+
+  color: hsl(212, 27%, 19%);
+  font-weight: 900;
+}
+
+.type42-title {
+  background-color: rgb(255, 240, 220);
+  margin-top: 14px;
+
+  color: hsl(210, 4%, 67%);
+  font-family: 'Barlow';
+  font-size: 14px;
+}
+
+
+
+
+
+
+
+#img-gallery-wrapper {
+  background-color: chocolate;
+  height: 360px;
+}
+
+
+
+
 /* ===================================================== */
 footer {
   background-color: hsl(168, 34%, 41%);
@@ -361,3 +440,19 @@ footer {
 .footer-svg > path {
   fill: hsl(167, 40%, 24%);
 }
+
+
+
+/* 
+PAGE SECTIONS DIMENSION (in px)
+
+Total: 5219
+  * front-page = 560
+  * egg-sec = 770
+  * glass-sec = 770
+  * fruit-sec = 1240
+  * testimonials = 1159
+  * img-gallery = 360
+  * footer = 360
+
+*/
