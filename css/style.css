@@ -248,7 +248,7 @@ main {
 .type3-wrapper > img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: co;
 }
 
 #cherry-desktop-img {
@@ -452,12 +452,7 @@ footer {
 }
 
 
-
-
-
-
-
-
+/* 500px threeshold mobile - 640 px */
 
 
 
