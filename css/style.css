@@ -358,23 +358,17 @@ main {
   font-size: 14px;
 }
 
-
-
-
-
-
-
 #img-gallery-wrapper {
   height: 360px;
 }
 
-.row-img-wrapper {
+.img-gallery-pair {
   height: 50%;
 
   display: flex;
 }
 
-.col-img-wrapper {
+.pair-div {
   width: 50%;
   height: 100%;
 }
@@ -456,6 +450,19 @@ footer {
 .footer-svg > path {
   fill: hsl(167, 40%, 24%);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

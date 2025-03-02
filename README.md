@@ -108,6 +108,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 - https://www.youtube.com/watch?v=DSK6lsCvEog&ab_channel=TechnoSunita
 - https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration
+- https://tailwindcss.com/docs/responsive-design
 
 
 
