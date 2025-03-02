@@ -32,6 +32,7 @@ body {
 
 #front-page-wrapper > header {
   background-color: hsl(200, 100%, 62%);
+  background-color: chocolate;
   width: 100%;
   height: 100px;
 
@@ -142,13 +143,13 @@ main {
   height: 310px;
 }
 
-.type2-img-wrapper > img:first-child {
+.type2-img-wrapper > img:first-of-type {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.type2-img-wrapper > img:last-child {
+.type2-img-wrapper > img:last-of-type {
   display: none;
 }
 
@@ -219,6 +220,10 @@ main {
   height: 770px;
 }
 
+#left-glass-img{
+  display: none;
+}
+
 #glass-text-wrapper {
   display: flex;
   flex-direction: column;
@@ -248,7 +253,7 @@ main {
 .type3-wrapper > img {
   width: 100%;
   height: 100%;
-  object-fit: co;
+  object-fit: cover;
 }
 
 #cherry-desktop-img {
@@ -454,8 +459,96 @@ footer {
 
 /* 500px threeshold mobile - 640 px */
 
+@media only screen and (400px < width){
+  #orange-mobile-img {
+    display: none;
+  }
+
+  #orange-desktop-img {
+    display: flex;
+  }
+}
+
+@media only screen and (420px < width){
+  #mobile-front-orange {
+    display: none;
+  }
+
+  #front-page-img > img:last-child {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+  }
+
+  #front-page-wrapper > h1 {
+    top:135px;
+  }
+
+  #down-arrow {
+    top:160px;
+  }
+
+  #down-arrow > img {
+    width: 35px;
+    height: 110px;
+  }
+
+  #cherry-mobile-img {
+    display: none;
+  }
+
+  #cherry-desktop-img {
+    display: flex;
+  }
+  
+}
+
+@media only screen and (470px < width){
+  .type2-img-wrapper {
+    display: flex;
+  }
+
+  .type2-img-wrapper > img:first-of-type {
+    display: none;
+  }
+  
+  .type2-img-wrapper > img:last-of-type {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    object-fit: contain;
+  }
+
+  #egg-img {
+    background-color: hsl(50, 100%, 50%);
+  }
+
+  #glass-img {
+    background-color: chocolate;
+    width: 100%;
+  }
+
+  #left-glass-img {
+    background-color: rebeccapurple;
+    width: 50%;
+
+    display: flex;
+  }
+
+  #desktop-glass-img {
+    background-color: orangered;
+    width: 400px;
 
 
+    object-fit: cover;
+
+    position: relative;
+
+
+  }
+
+}
 
 
 
