@@ -23,6 +23,7 @@ body {
 #page-wrapper { 
   background-color: orange;
   width: 100%;
+  height: 4859px;
 }
 
 #page-wrapper > header {
@@ -72,7 +73,9 @@ body {
 main {
   background-color: darkgreen;
   width: 240px;
-  height: 5299px;
+  height: 4859px;
+  position: relative;
+  top: -100px;
 }
 
 #front-page-wrapper {
@@ -97,7 +100,7 @@ main {
   color: white;
   text-align: center;
   font-size: 40px;
-  font-size: 1.2em;
+  /* font-size: 1.2em; */
   font-weight: 900;
   letter-spacing: 6px;
 }
@@ -432,7 +435,6 @@ colocar el css del block de notas
 /* ===================================================== */
 footer {
   background-color: hsl(168, 34%, 41%);
-  background-color: chocolate;
   width: 240px;
   height: 360px;
 
@@ -813,12 +815,16 @@ footer {
 PAGE SECTIONS DIMENSION (in px)
 
 Total: 5219
-  * front-page = 560
-  * egg-sec = 770
-  * glass-sec = 770
-  * fruit-sec = 1240
-  * testimonials = 1159
-  * img-gallery = 360
-  * footer = 360
+
+  > page-wrapper
+    - header = 100
+    - main = 4859 
+      * front-page = 560
+      * egg-sec = 770
+      * glass-sec = 770
+      * fruit-sec = 1240
+      * testimonials = 1159
+      * img-gallery = 360
+  > footer = 360
 
 */
