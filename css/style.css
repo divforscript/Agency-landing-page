@@ -83,13 +83,9 @@ main {
   width: 100%;
   height: 560px;
 
-  /* display: flex;
-  flex-direction: column; */
-
 }
 
 #front-page-wrapper > h1 {
-  background-color: darkred;
   width: 100%;
   height: 100px;
 
@@ -128,7 +124,7 @@ main {
 #front-page-img {
   background-color: bisque;
   width: 100%;
-  height: 100%;
+  height: 560px;
 
   position: relative;
   z-index: var(--front-page-background);
@@ -324,11 +320,11 @@ main {
   color: hsl(167, 40%, 24%);
 }
 
-#orange-desktop-img {
+#tangerine-desktop-img {
   display: none;
 }
 
-#orange-wrapper > div {
+#tangerine-wrapper > div {
   color: hsl(198, 62%, 26%);
 }
 
@@ -430,9 +426,7 @@ main {
 }
 
 
-/*
-colocar el css del block de notas 
-/* ===================================================== */
+
 footer {
   background-color: hsl(168, 34%, 41%);
   width: 240px;
@@ -542,46 +536,14 @@ footer {
 
 
 
-
-
-/* #footer-page-links {
-  height: 80px;
-  margin-top: 10px;
-
-  display: flex;
-  justify-content: center;
-  
-}
-
-#footer-page-links > ul {
-  list-style: none;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 10px;
-  
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-/* 500px threeshold mobile - 640 px
+/* 500px threeshold mobile - 640 px */
 
 @media only screen and (400px < width){
-  #orange-mobile-img {
+  #tangerine-mobile-img {
     display: none;
   }
 
-  #orange-desktop-img {
+  #tangerine-desktop-img {
     display: flex;
   }
 }
@@ -594,12 +556,12 @@ footer {
   #front-page-img > img:last-child {
     width: 100%;
     height: 100%;
-    display: block;
+    display: flex;
     object-fit: cover;
   }
 
   #front-page-wrapper > h1 {
-    top:135px;
+    top:125px;
   }
 
   #down-arrow {
@@ -607,7 +569,7 @@ footer {
   }
 
   #down-arrow > img {
-    width: 35px;
+    width: 40px;
     height: 110px;
   }
 
@@ -717,11 +679,6 @@ footer {
 }
 
 @media only screen and (521px < width){
-  #front-page-wrapper > header {
-    background-color: hsl(200, 100%, 62%);
-    
-  }
-
   #mobile-hamburger {
     display: none;
   }
@@ -771,14 +728,20 @@ footer {
   }
 
   #front-page-wrapper > h1 {
-    background-color: darkred;
-    
     width: 90%;
-    top: 135px;
-    left: 25px;
+    top: 125px;
+    left: 5%;
   }
 
 }
+
+@media only screen and (578px < width){
+  #front-page-wrapper > h1 {
+    top: 145px;
+  }
+}
+
+
 
 @media only screen and (590px < width){
   #nav-bar {
@@ -792,6 +755,7 @@ footer {
     color: black;
   }
 
+
 }
 
 
@@ -804,7 +768,7 @@ footer {
   .desktop-gallery-img {
     object-fit:fill;
   }
-} */
+} 
 
 
 
