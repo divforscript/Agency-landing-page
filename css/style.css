@@ -175,9 +175,10 @@ main {
 
 .type2-title {
   height: 90px;
+  width: 100%;
 
   color: hsl(212, 27%, 19%);
-  font-size: 32px;
+  font-size: 30px;
   font-weight: 900;
 
   margin-top: 40px;
@@ -185,16 +186,17 @@ main {
 }
 
 .type2-paragraph {
-  margin-top: 25px;
+  margin-top: 20px;
 
   color: hsl(213, 9%, 39%);
   font-family: 'Barlow',sans-serif;
   font-size: 16px;
+  font-weight: 600;
   line-height: 25px;
 }
 
 .type2-link{
-  margin-top: 50px;
+  margin-top: 18%;
 }
 
 .type2-link > a {
@@ -782,7 +784,6 @@ footer {
 
   .type2-sec-wrapper {
     display: flex;
-
     height: 540px;
   }
 
@@ -794,6 +795,30 @@ footer {
   .type2-text-wrapper {
     width: 50%;
     height: 100%;
+
+    padding: 8%;
+    text-align: start;
+    justify-content: center;
+    align-items: start;
+
+  }
+
+  #glass-text-wrapper {
+    align-items: start;
+  }
+
+  .type2-link {
+    margin-top: 10%;
+  }
+
+  .type2-link > a {
+    font-size: 16px;
+  }
+
+  .link-underline {
+    width: 130px;
+    position: relative;
+    left: -7px;
   }
 
 
@@ -895,6 +920,25 @@ footer {
   }
 
 } 
+
+@media screen and (1011px < width) {
+  .type2-title {
+    width: 90%;
+    height: auto;
+
+    font-size: 40px;
+  }
+
+  .type2-paragraph {
+    
+    width: 95%;
+    margin-top: 7%;
+    font-size: 18px;
+  }
+
+  
+}
+
 
 @media only screen and (1440px < width){
   
