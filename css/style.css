@@ -34,7 +34,6 @@ body {
 
 #page-wrapper > header {
   background-color: hsl(200, 100%, 62%);
-  background-color: chocolate;
   width: 240px;
 
   height: 100px;
@@ -73,8 +72,6 @@ body {
 #nav-bar > ul {
   display: none;
 }
-
-
 
 
 main {
