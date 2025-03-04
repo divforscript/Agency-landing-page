@@ -147,9 +147,7 @@ main {
 
 
 
-
-
-#egg-sec-wrapper {
+.type2-sec-wrapper {
   width: 100%;
   height: 770px;
 }
@@ -231,10 +229,10 @@ main {
 }
 
 
-#glass-sec-wrapper {
+/* #glass-sec-wrapper {
   background-color: chocolate;
   height: 770px;
-}
+} */
 
 #left-glass-img{
   display: none;
@@ -474,7 +472,6 @@ footer {
   font-family: 'Barlow';
   font-size: 18px;
   font-weight: 600;
-  
 }
 
 #footer-social-links {
@@ -546,6 +543,22 @@ footer {
   #tangerine-desktop-img {
     display: flex;
   }
+
+  #footer-page-links > ul > li > a {
+    font-size: 24px;
+  }
+
+  #footer-social-links {
+    margin-top: 72px;
+  }
+
+  #footer-social-links > ul {
+    gap: 60px;
+  }
+
+  .footer-social-icons {
+    transform: scale(1.5);
+  }
 }
 
 @media only screen and (420px < width){
@@ -589,6 +602,7 @@ footer {
   .third-element {
     display: flex;
   }
+
   
 }
 
@@ -614,7 +628,6 @@ footer {
 
   #glass-img {
     background-color: chocolate;
-    width: 100%;
   }
 
   #left-glass-img {
@@ -646,6 +659,7 @@ footer {
 
   }
 
+
   #img-gallery-wrapper {
     display: flex;
   }
@@ -675,6 +689,7 @@ footer {
   .third-element {
     display: none;
   }
+
 
 }
 
@@ -741,23 +756,15 @@ footer {
   }
 }
 
-
-
 @media only screen and (590px < width){
-  #nav-bar {
-    padding-right: 16px;
-  }
   
   #nav-bar > ul > li > #contact-link {
     background-color: white;
-    padding: 14px 24px;
+    padding: 14px 16px;
     border-radius: 24px;
     color: black;
   }
-
-
 }
-
 
 
 @media only screen and (768px < width){
@@ -765,9 +772,71 @@ footer {
     gap: 45px;
   }
 
-  .desktop-gallery-img {
-    object-fit:fill;
+  #page-wrapper {
+    height: 4400px;
   }
+
+  main {
+    height: auto;
+  }
+
+  .type2-sec-wrapper {
+    display: flex;
+
+    height: 540px;
+  }
+
+  .type2-img-wrapper {
+    width: 50%;
+    height: 100%;
+  }
+
+  .type2-text-wrapper {
+    width: 50%;
+    height: 100%;
+  }
+
+
+
+ 
+  #egg-img {
+    position: relative;
+    left: 50%;
+  }
+
+  #egg-img > img {
+    object-fit: cover;
+  }
+
+  #egg-text-wrapper {
+    position: relative;
+    right: 50% ;
+  }
+
+  #left-glass-img {
+    display: none;
+  }
+
+  #rigth-glass-img {
+    width: 100%;
+  }
+
+  #desktop-glass-img {
+    width: 100%;
+    height: 100%;
+
+
+    object-fit: cover;
+    left: 0px;
+
+  }
+
+  .desktop-gallery-img {
+    object-fit:cover;
+  }
+
+
+  
 } 
 
 
