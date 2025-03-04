@@ -71,7 +71,7 @@ body {
 main {
   background-color: darkgreen;
   width: 240px;
-  max-width: 1440px;
+  max-width: 100%;
   /* height: 4859px; */
   position: relative;
   top: -100px;
@@ -768,7 +768,7 @@ footer {
   }
 
   #page-wrapper {
-    height: 3759px;
+    height: 3370px;
   }
 
   #main-wrapper {
@@ -777,7 +777,7 @@ footer {
   }
 
   main {
-    height: 3759px;
+    height: 3370px;
   }
 
   .type2-sec-wrapper {
@@ -836,6 +836,7 @@ footer {
 
   .type3-wrapper {
     width: 50%;
+    height: 100%;
   }
 
   .pair-div {
@@ -844,27 +845,72 @@ footer {
   }
 
   #testimonials-wrapper {
-    height: 1139px;
+    height: 750px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
   }
+
+  #testimonials-wrapper > h2 {
+    width: 100%;
+    max-width: 1034px;
+    height: 40px;
+    margin-top: 0px;
+
+    font-size: 24px;
+  }
+
+  #clients-wrapper {
+    max-width: 1034px;
+    height: 440px;
+    
+    flex-direction: row;
+  }
+  
+  .client-testimonial {
+    width: 33.3%;
+    margin-top: 60px;
+  }
+  
+  .client-testimonial > img {
+    width: 70px;
+  }
+  
+  .type4-paragraph {
+    width: 90%;
+    min-height: 120px;
+    margin-top: 55px;
+  }
+  
+  .type41-title {
+    margin-top: 50px;
+  }
+  
 
   .desktop-gallery-img {
     object-fit:cover;
   }
 
-
-  
 } 
 
+@media only screen and (1440px < width){
+  
+  #page-wrapper {
+    height: 3550px;
+  }
 
+  #main-wrapper {
+    height: 3550px;
+  }
 
+  #fruit-sec-wrapper {
+    height: 800px;
+  }
 
-
-
-
-
-
-
-
+}
 
 
 
@@ -875,12 +921,12 @@ Total: 5219
 
   > page-wrapper
     - header = 100
-    - main = 4859 
+    - main = 4859 / 3370 / 3550 (>1440px)
       * front-page = 560
-      * egg-sec = 770
-      * glass-sec = 770
-      * fruit-sec = 1240
-      * testimonials = 1159
+      * egg-sec = 770 (mob) / 540 (desktop)
+      * glass-sec = 770 (mob) / 540 (desktop)
+      * fruit-sec = 1240 (mob) / 620 (desktop) / 800 
+      * testimonials = 1159 (mob) / 750 (desktop)
       * img-gallery = 360
   > footer = 360
 
