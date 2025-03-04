@@ -96,7 +96,6 @@ main {
   color: white;
   text-align: center;
   font-size: 40px;
-  /* font-size: 1.2em; */
   font-weight: 900;
   letter-spacing: 6px;
 }
@@ -116,7 +115,6 @@ main {
 }
 
 #down-arrow > img {
-  /* background-color: orange; */
   width: 40px;
   height: 120px;
 }
@@ -142,9 +140,6 @@ main {
 #front-page-img > img:last-child {
   display: none;
 }
-
-
-
 
 
 .type2-sec-wrapper {
