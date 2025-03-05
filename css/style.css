@@ -271,7 +271,6 @@ main {
 }
 
 .type3-wrapper {
-  background-color: burlywood;
   height: 620px;
   text-align: center;
 }
@@ -287,7 +286,7 @@ main {
 }
 
 .type3-text-wrapper {
-  height: 200px;
+  height: 180px;
   padding: 0px 20px;
 
   display: flex;
@@ -295,7 +294,7 @@ main {
   align-items: center;
 
   position: relative;
-  top: -230px;
+  top: -220px;
 }
 
 .type3-title {
@@ -304,7 +303,7 @@ main {
 }
 
 .type3-paragraph {
-  margin-top: 40px;
+  margin-top: 30px;
 
   font-family: 'Barlow', sans-serif;
   font-weight: 700;
@@ -533,6 +532,10 @@ footer {
 /* 500px threeshold mobile - 640 px */
 
 @media only screen and (400px < width){
+  .type3-paragraph {
+    max-width: 355px;
+  }
+
   #tangerine-mobile-img {
     display: none;
   }
@@ -952,6 +955,16 @@ footer {
 
   #fruit-sec-wrapper {
     height: 800px;
+  }
+
+  .type3-text-wrapper {
+    position: relative;
+    top: -270px;
+    font-size: 1.4em;
+  }
+
+  .type3-paragraph {
+    max-width: 80%;
   }
 
 }
