@@ -38,15 +38,18 @@ body {
   top: 0px;
   z-index: calc(var(--front-page-background) + 2);
 
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; */
   
 }
 
 #header-logo {
   width: 125px;
   height: 25px;
+
+  position: relative;
+  top: 38px;
 }
 
 #header-logo > img {
@@ -55,8 +58,14 @@ body {
 }
 
 #nav-bar {
-  width: 25px;
+  width: 100%;
   height: 25px;
+
+  position: relative;
+  top: 13px;
+
+  display: flex;
+  justify-content: end;
 }
 
 #mobile-hamburger {
@@ -65,6 +74,77 @@ body {
 
 #nav-bar > ul {
   display: none;
+}
+
+#dropdown-menu {
+  display: none;
+}
+
+#hamburger-menu-corner {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: end;
+
+  position: relative;
+  top: 36px;
+}
+
+#ham-menu-wrapper {
+  display: flex;
+  justify-content: end;
+}
+
+#hamburger-menu {
+  background-color: white;
+  width: 325px;
+  height: 320px;
+  position: relative;
+  top: 34px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hamburger-menu > ul {
+  width: 175px;
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+
+.ham-nav-links {
+  list-style: none;
+  text-align: center;
+  font-family: 'Barlow';
+  font-weight: 600;
+}
+
+.ham-nav-links:nth-of-type(4) {
+  height: 60px;
+  padding-top: 18px;
+  
+}
+
+.ham-nav-links > a {
+  text-decoration: none;
+  color: hsl(213, 9%, 39%);
+  font-size: 21px;
+}
+
+
+
+#ham-contact-link {
+  background-color: hsl(51, 100%, 49%);
+  color: black;
+  font-family: 'Fraunces';
+  font-weight: 700;
+
+  padding: 18px 30px;
+  border-radius: 30px;
 }
 
 
@@ -707,13 +787,27 @@ footer {
 }
 
 @media only screen and (521px < width){
-  #mobile-hamburger {
-    display: none;
+  #page-wrapper > header {
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
   }
+
+  #header-logo {
+    top: 0px;
+  }
+
 
   #nav-bar {
     width: 70%;
     height: 40px;
+    top: 0px;
+  }
+
+  #mobile-hamburger {
+    display: none;
   }
   
   #nav-bar > ul {
@@ -753,6 +847,10 @@ footer {
   #nav-bar > ul > li > #contact-link:hover {
     background-color: hsl(200, 100%, 72%);
     color: white;
+  }
+
+  #dropdown-menu {
+    display: none;
   }
 
   #front-page-wrapper > h1 {
