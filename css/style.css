@@ -226,11 +226,6 @@ main {
 }
 
 
-/* #glass-sec-wrapper {
-  background-color: chocolate;
-  height: 770px;
-} */
-
 #left-glass-img{
   display: none;
 }
@@ -470,6 +465,10 @@ footer {
   font-weight: 600;
 }
 
+#footer-page-links > ul > li > a:hover {
+  color: white;
+}
+
 #footer-social-links {
   height: 30px;
   margin-top: 45px;
@@ -483,6 +482,13 @@ footer {
   gap: 40px;
 }
 
+#footer-social-links > ul > li {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .footer-social-icons {
   transform: scale(1.2);
@@ -490,6 +496,10 @@ footer {
 
 .footer-svg > path {
   fill: hsl(167, 40%, 24%);
+}
+
+.footer-svg > path:hover {
+  fill: white;
 }
 
 
@@ -939,7 +949,13 @@ footer {
     font-size: 18px;
   }
 
+  #under-line-1:hover {
+    background-color: hsl(51, 100%, 49%);
+  }
   
+  #under-line-2:hover {
+    background-color: hsl(7, 99%, 70%);
+  }
 }
 
 
