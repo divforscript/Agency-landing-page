@@ -498,10 +498,13 @@ footer {
   fill: hsl(167, 40%, 24%);
 }
 
-.footer-svg > path:hover {
+#footer-page-links .footer-svg > path:hover {
   fill: white;
 }
 
+#footer-social-links .footer-svg > path:hover {
+  fill: white;
+}
 
 @media only screen and (240px < width){
   #page-wrapper > header {
