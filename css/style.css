@@ -10,7 +10,7 @@
 
 body {
   background-color: hsl(168, 34%, 41%);
-  width: 100vw;
+  width: 100%;
   font-family: 'Fraunces',sans-serif;
 
   overflow: auto;
