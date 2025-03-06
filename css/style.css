@@ -24,7 +24,7 @@ body {
 
 /* ===================================================== */
 #page-wrapper { 
-  background-color: orange;
+  background-color: hsl(167, 40%, 24%);
   width: 100%;
   height: 4859px;
 }
@@ -1083,8 +1083,17 @@ footer {
     height: 3550px;
   }
 
+  #page-wrapper > header {
+    padding: 0px 2.5%;
+  }
+
   #main-wrapper {
     height: 3550px;
+    
+  }
+
+  main {
+    max-width: 1440px;
   }
 
   #fruit-sec-wrapper {
