@@ -548,10 +548,6 @@ footer {
   font-weight: 600;
 }
 
-#footer-page-links > ul > li > a:hover {
-  color: white;
-}
-
 #footer-social-links {
   height: 30px;
   margin-top: 45px;
@@ -581,13 +577,10 @@ footer {
   fill: hsl(167, 40%, 24%);
 }
 
-#footer-page-links .footer-svg > path:hover {
+/* #footer-page-links .footer-svg > path:hover {
   fill: white;
-}
+} */
 
-#footer-social-links .footer-svg > path:hover {
-  fill: white;
-}
 
 @media only screen and (240px < width){
   #page-root {
@@ -1072,6 +1065,14 @@ footer {
   
   #under-line-2:hover {
     background-color: hsl(7, 99%, 70%);
+  }
+
+  #footer-page-links > ul > li > a:hover {
+    color: white;
+  }
+  
+  #footer-social-links .footer-svg > path:hover {
+    fill: white;
   }
 }
 
