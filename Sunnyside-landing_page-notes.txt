@@ -1,0 +1,11 @@
+Sunnyside landing page - notes
+=================================
+
+
+To Research
+
+CSS:
+Transition
+oppacity
+Inset
+Aria
